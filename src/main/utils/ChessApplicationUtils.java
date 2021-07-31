@@ -17,7 +17,7 @@ public class ChessApplicationUtils {
 	}
 
 	public static boolean checkValidCoordinateFromInteger(int xCoordinate, int yCoordinate) {
-		if (xCoordinate < 1 || xCoordinate > 8 || yCoordinate > 72 || yCoordinate < 65) {
+		if ((xCoordinate < 1 || xCoordinate > 8) || (yCoordinate > 72 || yCoordinate < 65)) {
 			return false;
 		} else {
 			return true;

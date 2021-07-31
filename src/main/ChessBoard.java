@@ -16,7 +16,9 @@ public class ChessBoard {
 			Peice peice = Peice.createPeice(peiceName);
 			boolean validCoordinate = ChessApplicationUtils.checkValidCoordinateFromUserInput(peiceLocation);
 			if (validCoordinate) {
-				ArrayList<String> possibleMoves = peice.getPossibleCoordinates(peiceLocation);
+				int xCoordinate = ChessApplicationUtils.convertFromUserInputCoordinate(peiceLocation, Coordinate.X);
+				int yCoordinate = ChessApplicationUtils.convertFromUserInputCoordinate(peiceLocation, Coordinate.Y);
+				ArrayList<String> possibleMoves = peice.generatePossibleCoordinates(xCoordinate, yCoordinate);
 				System.out.println(possibleMoves);
 			} else {
 				System.out.println("Peice location " + peiceLocation + " entered is invalid");
