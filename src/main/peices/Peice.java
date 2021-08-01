@@ -6,6 +6,7 @@ import main.exceptions.InvalidPeiceException;
 
 public interface Peice {
 
+	//returns list of possible coordinate based on calling type and input coordinates.
 	public ArrayList<String> generatePossibleCoordinates(int xCoordinate, int yCoordinate);
 
 	public static Peice createPeice(String peiceName) throws InvalidPeiceException {

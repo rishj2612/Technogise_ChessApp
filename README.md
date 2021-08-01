@@ -11,9 +11,8 @@ To Run the application follow below step:
 <li>Open Cmd in your system.</li>
 <li>Clone the repo by using git clone "https://github.com/rishj2612/Technogise_ChessApp.git"</li>
 <li>Import this application as Java Project in eclipse.</li>
-<li>Set the program arguments to the "King H5" or "KING G6" depending on what peice you want to get 
-    possible moves for.</li>
 <li>Right click on ChessApplication.java file and run as java project.</li>
+<li>Enter the desired peicename and location in input prompt example: KING H5
 </ol>
 
 <p>&nbsp;</p>
