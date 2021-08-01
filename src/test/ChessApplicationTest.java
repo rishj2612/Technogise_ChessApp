@@ -116,11 +116,13 @@ class ChessApplicationTest {
 		ChessApplication.main(new String[] { "Bishop D4" });
 		assertEquals("[C3, B2, A1, C5, B6, A7, E3, F2, G1, E5, F6, G7, H8]\r\n", outputContent.toString());
 	}
-	
+
 	@Test
 	void testQueenForHappyPath() {
 		ChessApplication.main(new String[] { "Queen D4" });
-		assertEquals("[D3, D2, D1, D5, D6, D7, D8, E4, F4, G4, H4, C4, B4, A4, E3, F2, G1, E5, F6, G7, H8, C3, B2, A1, C5, B6, A7]\r\n", outputContent.toString());
+		assertEquals(
+				"[E4, F4, G4, H4, C4, B4, A4, D3, D2, D1, D5, D6, D7, D8, C3, B2, A1, C5, B6, A7, E3, F2, G1, E5, F6, G7, H8]\r\n",
+				outputContent.toString());
 	}
 
 }
