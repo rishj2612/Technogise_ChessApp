@@ -1,7 +1,5 @@
 package main.utils;
 
-import main.Coordinate;
-
 public class ChessApplicationUtils {
 	public static boolean checkValidCoordinateFromUserInput(String userInputCoordinate) {
 		int y = convertFromUserInputCoordinate(userInputCoordinate, Coordinate.Y);
@@ -17,7 +15,8 @@ public class ChessApplicationUtils {
 	}
 
 	public static boolean checkValidCoordinateFromInteger(int xCoordinate, int yCoordinate) {
-		if ((xCoordinate < 1 || xCoordinate > 8) || (yCoordinate > 72 || yCoordinate < 65)) {
+		if ((xCoordinate < Constants.MIN_X_COORDINATE_VAL || xCoordinate > Constants.MAX_X_COORDINATE_VAL)
+				|| (yCoordinate > Constants.MAX_Y_COORDINATE_VAL || yCoordinate < Constants.MIN_Y_COORDINATE_VAL)) {
 			return false;
 		} else {
 			return true;

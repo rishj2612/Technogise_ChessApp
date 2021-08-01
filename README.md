@@ -20,7 +20,7 @@ To Run the application follow below step:
 Made this application with below assumptions:
 <ol>
 <li>Chess board is empty when a user wants to run get all possible moves by a peice.</li>
-<li>2).User will give the peice name and position for which he/she wants to find all Possible
+<li>User will give the peice name and position for which he/she wants to find all Possible
     moves.</li>
-<li>3).Pawn can move only in up direction hence we are showing only vertically up in output.</li>
+<li>Pawn can move only in up direction hence we are showing only vertically up in output.</li>
 </ol>

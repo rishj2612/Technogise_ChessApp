@@ -5,10 +5,11 @@ import java.util.ArrayList;
 import main.exceptions.InvalidPeiceException;
 import main.peices.Peice;
 import main.utils.ChessApplicationUtils;
+import main.utils.Coordinate;
 
 public class ChessBoard {
 
-	static void getPossibleCoordinates(String userInput) {
+	static void getPossibleCoordinates(String userInput) throws ArrayIndexOutOfBoundsException {
 		String userInputs[] = userInput.split(" ");
 		String peiceName = userInputs[0];
 		String peiceLocation = userInputs[1];
@@ -26,6 +27,5 @@ public class ChessBoard {
 		} catch (InvalidPeiceException e) {
 			System.out.println("Peice " + peiceName + " entered is invalid.");
 		}
-
 	}
 }

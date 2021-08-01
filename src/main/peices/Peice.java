@@ -20,6 +20,15 @@ public interface Peice {
 		case "HORSE":
 			peice = new Horse();
 			break;
+		case "ROOK":
+			peice = new Rook();
+			break;
+		case "BISHOP":
+			peice = new Bishop();
+			break;
+		case "QUEEN":
+			peice = new Queen();
+			break;
 		default:
 			throw new InvalidPeiceException();
 		}
