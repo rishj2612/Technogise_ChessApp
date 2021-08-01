@@ -3,8 +3,8 @@
 This Repo is created for Technogise Chess App 
 
 Here we provide a command line argument to find the possible moves of a chess peice:
-<p>&nbsp;</p>
 Example: "King H5"
+<p>&nbsp;</p>
 
 To Run the application follow below step:
 <ol>
