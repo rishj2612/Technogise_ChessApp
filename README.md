@@ -23,3 +23,14 @@ Made this application with below assumptions:
     moves.</li>
 <li>Pawn can move only in up direction hence we are showing only vertically up in output.</li>
 </ol>
+
+<p>&nbsp;</p>
+Libraries used: used these libs for testing purpose( mockito)
+<ol>
+<li>mockito-core-2.23.4.jar</li>
+<li>byte-buddy-1.9.3.jar</li>
+<li>byte-buddy-agent-1.9.3.jar</li>
+<li>hamcrest-core-1.3.jar</li>
+<li>javassist-3.24.0-GA.jar</li>
+    <li>objenesis-2.6.jar</li>    
+</ol>
