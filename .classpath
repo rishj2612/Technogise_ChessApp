@@ -7,5 +7,17 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/mockito-core-2.23.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/byte-buddy-1.9.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/byte-buddy-agent-1.9.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/javassist-3.24.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/objenesis-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/powermock-api-mockito2-2.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/powermock-api-support-2.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/powermock-core-2.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/powermock-module-junit4-2.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/powermock-module-junit4-common-2.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/risha/OneDrive/Desktop/powermock/powermock-reflect-2.0.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

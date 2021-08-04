@@ -6,18 +6,18 @@ import org.junit.jupiter.api.Test;
 
 import main.utils.Constants;
 
-class ConstantsTest {
+public class ConstantsTest {
 
 	@Test
-	void testXCoordinateValues() {
-		assertEquals(Constants.MAX_X_COORDINATE_VAL,8);
-		assertEquals(Constants.MIN_X_COORDINATE_VAL,1);
+	public void testXCoordinateValues() {
+		assertEquals(Constants.MAX_X_COORDINATE_VAL, 8);
+		assertEquals(Constants.MIN_X_COORDINATE_VAL, 1);
 	}
-	
+
 	@Test
-	void testYCoordinateValues() {
-		assertEquals(Constants.MAX_Y_COORDINATE_VAL,72);
-		assertEquals(Constants.MIN_Y_COORDINATE_VAL,65);
+	public void testYCoordinateValues() {
+		assertEquals(Constants.MAX_Y_COORDINATE_VAL, 72);
+		assertEquals(Constants.MIN_Y_COORDINATE_VAL, 65);
 	}
 
 }

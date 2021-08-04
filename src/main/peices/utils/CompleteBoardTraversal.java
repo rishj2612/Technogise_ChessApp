@@ -6,16 +6,31 @@ import main.utils.ChessApplicationUtils;
 
 public class CompleteBoardTraversal {
 
-	// sets possible moves for Bishop
-	protected void getPossibleMovedForBishop(ArrayList<String> possibleMoves, int xCoordinate, int yCoordinate) {
+	// traverse using possible coordinates array
+	public ArrayList<String> traverseUsingTraversalCoordinatesList(int[] possibleXMoves, int[] possibleYMoves,
+			int xCoordinate, int yCoordinate) {
+		ArrayList<String> possibleMoves = new ArrayList<String>();
+		for (int index = 0; index < possibleXMoves.length; index++) {
+			int movedXCoordinate = xCoordinate + possibleXMoves[index];
+			int movedYCoordinate = yCoordinate + possibleYMoves[index];
+			if (ChessApplicationUtils.checkValidCoordinateFromInteger(movedXCoordinate, movedYCoordinate)) {
+				possibleMoves
+						.add(ChessApplicationUtils.convertToUserInputCoordinate(movedXCoordinate, movedYCoordinate));
+			}
+		}
+		return possibleMoves;
+	}
+
+	// sets possible moves for traversing diagonally
+	public void traverseDiagonally(ArrayList<String> possibleMoves, int xCoordinate, int yCoordinate) {
 		traverseDownwardsLeft(possibleMoves, xCoordinate, yCoordinate);
 		traverseDownwardsRight(possibleMoves, xCoordinate, yCoordinate);
 		traverseUpwardsLeft(possibleMoves, xCoordinate, yCoordinate);
 		traverseUpwardsRight(possibleMoves, xCoordinate, yCoordinate);
 	}
 
-	// sets all possible moved for Rook
-	protected void getPossibleMovedForRook(ArrayList<String> possibleMoves, int xCoordinate, int yCoordinate) {
+	// sets all possible moved for traversing laterally
+	public void traverseLaterally(ArrayList<String> possibleMoves, int xCoordinate, int yCoordinate) {
 		traverseUpwards(possibleMoves, xCoordinate, yCoordinate);
 		traverseDownwards(possibleMoves, xCoordinate, yCoordinate);
 		traverseLeft(possibleMoves, xCoordinate, yCoordinate);

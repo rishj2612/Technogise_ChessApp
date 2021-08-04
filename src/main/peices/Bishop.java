@@ -8,7 +8,7 @@ public class Bishop extends CompleteBoardTraversal implements Peice {
 
 	public ArrayList<String> generatePossibleCoordinates(int xCoordinate, int yCoordinate) {
 		ArrayList<String> possibleMoves = new ArrayList<String>();
-		getPossibleMovedForBishop(possibleMoves, xCoordinate, yCoordinate);
+		traverseDiagonally(possibleMoves, xCoordinate, yCoordinate);
 		return possibleMoves;
 	}
 
